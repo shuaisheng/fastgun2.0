@@ -28,7 +28,7 @@ public class PropertiesUtil {
          * 切记不要使用这种：src/resources.dev/data.properties 会出现异常
          * 直接指明配置文件就行了
          */
-        String fileName = "data.properties";
+        String fileName = "conf.properties";
         props = new Properties();
         try {
             props.load(
