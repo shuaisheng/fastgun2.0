@@ -12,6 +12,8 @@ import java.util.Map;
 import java.util.concurrent.TimeUnit;
 import java.util.stream.Collectors;
 
+import static com.xuexibao.fastgun.utils.JsonUtil.object2Json;
+
 
 public class HttpUtil {
 
@@ -86,7 +88,21 @@ public class HttpUtil {
      * @return
      */
     public static String postJson(String url, Object obj) {
-        return execute(OkHttp.builder().url(url).method(POST).data(JSON.toJSONString(obj)).mediaType(javax.ws.rs.core.MediaType.APPLICATION_JSON).build());
+        return execute(OkHttp.builder().url(url).method(POST).data(object2Json(obj)).mediaType(javax.ws.rs.core.MediaType.APPLICATION_JSON).build());
+    }
+
+
+    /**
+     *
+     * POST
+     * application/json
+     *
+     * @param url
+     * @param string
+     * @return
+     */
+    public static String postJson(String url, String string) {
+        return execute(OkHttp.builder().url(url).method(POST).data(string).mediaType(javax.ws.rs.core.MediaType.APPLICATION_JSON).build());
     }
 
     /**
