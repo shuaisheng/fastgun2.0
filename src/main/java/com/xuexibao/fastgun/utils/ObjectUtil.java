@@ -40,6 +40,20 @@ public class ObjectUtil {
         return obj;
     }
 
+
+    public static <T> T getObjectByMap(T t, Map<String, Object> map)
+            throws InstantiationException, IllegalAccessException {
+        Field[] fields = t.getClass().getDeclaredFields();
+        for (Field field : fields) {
+            try {
+                field.setAccessible(true);
+                field.set(t, map.get(field.getName()));
+            } catch (Exception e) {
+            }
+        }
+        return t;
+    }
+
     /**
      * Byte数组转对象
      * @param bytes
