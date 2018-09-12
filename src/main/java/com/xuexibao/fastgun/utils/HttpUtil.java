@@ -1,6 +1,5 @@
 package com.xuexibao.fastgun.utils;
 
-import com.alibaba.fastjson.JSON;
 import lombok.Builder;
 import lombok.ToString;
 import okhttp3.*;
