@@ -4,8 +4,10 @@ import com.xuexibao.fastgun.enums.IStatusEnums;
 
 public enum ResultEnumImpl implements IStatusEnums {
 
-		SUCCESS(0,"success");
-		
+		SUCCESS(0,"success"),
+		UNKNOW_ERROR(100000,"未知错误"),
+		ERROR_PARAME(100001,"参数错误"),
+		EMPTY_PARAME(100002,"参数为空");
 		
 		private int code;
 		private String msg;

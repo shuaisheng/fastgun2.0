@@ -1,5 +1,7 @@
 package com.xuexibao.fastgun.utils;
 
+import com.xuexibao.fastgun.enums.IStatusEnums;
+import com.xuexibao.fastgun.enums.impl.ResultEnumImpl;
 import com.xuexibao.fastgun.viewobject.ResultVO;
 
 public class ResultVOUtil {
@@ -22,4 +24,13 @@ public class ResultVOUtil {
         resultVO.setMsg(msg);
         return  resultVO;
     }
+
+    public  static  ResultVO error(IStatusEnums result){
+        ResultVO resultVO = new ResultVO();
+        resultVO.setCode(result.getCode());
+        resultVO.setMsg(result.getMsg());
+        return  resultVO;
+    }
+
+
 }
