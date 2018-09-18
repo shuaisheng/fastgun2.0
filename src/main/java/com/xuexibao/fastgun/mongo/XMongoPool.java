@@ -8,7 +8,6 @@ import java.util.List;
 import java.util.Map;
 
 import com.xuexibao.fastgun.utils.BsonUtil;
-import com.xuexibao.fastgun.utils.ObjectUtil;
 import org.bson.Document;
 import org.bson.types.ObjectId;
 import org.javatuples.Pair;
@@ -23,6 +22,9 @@ import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoCursor;
 import com.mongodb.client.result.DeleteResult;
 import com.mongodb.client.result.UpdateResult;
+
+
+import  com.xuexibao.fastgun.utils.ObjectUtil;
 
 
 public class XMongoPool {
