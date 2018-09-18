@@ -1,7 +1,6 @@
 package com.xuexibao.fastgun.utils;
 
 import com.xuexibao.fastgun.enums.IStatusEnums;
-import com.xuexibao.fastgun.enums.impl.ResultEnumImpl;
 import com.xuexibao.fastgun.viewobject.ResultVO;
 
 public class ResultVOUtil {
