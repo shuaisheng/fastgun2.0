@@ -1,5 +1,6 @@
 package com.xuexibao.fastgun.utils;
 
+import java.math.BigDecimal;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
@@ -46,6 +47,20 @@ public class DataUtil {
         }
 
         return sdf.format(new Date(timeStamp));
+    }
+
+    /**
+     * 传入毫秒数转为日期格式2018-08-06
+     * @param d
+     * @return
+     */
+    public static  String convertTime(Double d){
+        if(d==null){
+            return null;
+        }
+        BigDecimal bd1 = new BigDecimal(d);
+        String time=new Date(Long.parseLong(bd1.toPlainString())).toLocaleString().split(" ")[0];
+        return time;
     }
 
 }
