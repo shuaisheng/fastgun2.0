@@ -31,5 +31,18 @@ public class JsonUtil {
         return (String) map.get(key);
     }
 
+    /**
+     * 取出 json的key值返回int类型
+     * @param json
+     * @param key
+     * @return
+     */
+    public static int getIntValue(String json,String key){
+        Gson gson = new Gson();
+        Map map = gson.fromJson(json, Map.class);
+        return (int)map.get(key) ;
+    }
+
+
 
 }
