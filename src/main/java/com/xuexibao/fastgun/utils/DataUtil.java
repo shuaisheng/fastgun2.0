@@ -58,9 +58,17 @@ public class DataUtil {
         if(d==null){
             return null;
         }
+        /*BigDecimal bd1 = new BigDecimal(d);
+        SimpleDateFormat simpleDateFormat=new SimpleDateFormat("yyyy-MM-dd");
+        String time=new Date(Long.parseLong(bd1.toPlainString())).toLocaleString();*/
+        //String time=new Date(Long.parseLong(bd1.toPlainString())).toLocaleString().split(" ")[0];
         BigDecimal bd1 = new BigDecimal(d);
-        String time=new Date(Long.parseLong(bd1.toPlainString())).toLocaleString().split(" ")[0];
-        return time;
+        SimpleDateFormat simpleDateFormat=new SimpleDateFormat("yyyy-MM-dd");
+        Date time=new Date(Long.parseLong(bd1.toPlainString()));
+        String result=simpleDateFormat.format(time);
+        return result;
     }
+
+
 
 }
