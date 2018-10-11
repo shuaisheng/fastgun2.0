@@ -5,15 +5,9 @@ import com.google.i18n.phonenumbers.PhoneNumberToCarrierMapper;
 import com.google.i18n.phonenumbers.PhoneNumberUtil;
 import com.google.i18n.phonenumbers.Phonenumber.PhoneNumber;
 import com.google.i18n.phonenumbers.geocoding.PhoneNumberOfflineGeocoder;
-import com.xuexibao.fastgun.enums.impl.ExceptionEnumImpl;
-import com.xuexibao.fastgun.enums.impl.ResultEnumImpl;
-import com.xuexibao.fastgun.exception.RunException;
-import com.xuexibao.fastgun.viewobject.ResultVO;
-
 import java.util.Locale;
 
-import static com.xuexibao.fastgun.enums.impl.ExceptionEnumImpl.EMPTY_PARAME;
-import static com.xuexibao.fastgun.enums.impl.ResultEnumImpl.SUCCESS;
+
 
 
 public class PhoneUtils {
@@ -130,9 +124,10 @@ public class PhoneUtils {
 
     public static void main(String[] args) {
 
-        System.out.println(PhoneUtils.getCarrier("15866721639",86));
+        //166 号段测试 16638390283
+        System.out.println(PhoneUtils.getCarrier("16638390283",86));
         System.out.println(PhoneUtils.getCarrier("17660630068"));
-        throw new RunException(EMPTY_PARAME);
+
 
 
     }

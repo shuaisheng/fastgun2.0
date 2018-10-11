@@ -4,12 +4,12 @@
 
   <groupId>com.xuexibao</groupId>
   <artifactId>fastgun</artifactId>
-  <version>1.0.0</version>
+  <version>2.0.0</version>
   <packaging>jar</packaging>
 
-  <name>fastgun</name>
+ <!-- <name>fastgun</name>
   <url>http://maven.apache.org</url>
- 
+ -->
   <build>
         <plugins>
             <plugin>
@@ -78,26 +78,27 @@
       <dependency>
           <groupId>com.googlecode.libphonenumber</groupId>
           <artifactId>geocoder</artifactId>
-          <version>2.82</version>
+          <version>2.104</version>
       </dependency>
 
       <dependency>
           <groupId>com.googlecode.libphonenumber</groupId>
           <artifactId>libphonenumber</artifactId>
-          <version>8.8.5</version>
+          <version>8.9.15</version>
       </dependency>
 
       <dependency>
           <groupId>com.googlecode.libphonenumber</groupId>
           <artifactId>prefixmapper</artifactId>
-          <version>2.82</version>
+          <version>2.104</version>
       </dependency>
       <dependency>
           <groupId>com.googlecode.libphonenumber</groupId>
           <artifactId>carrier</artifactId>
-          <version>1.72</version>
+          <version>1.94</version>
       </dependency>
 
+      <!--mongodb依赖-->
       <dependency>
           <groupId>org.mongodb</groupId>
           <artifactId>bson</artifactId>
@@ -109,6 +110,18 @@
           <groupId>org.mongodb</groupId>
           <artifactId>mongodb-driver</artifactId>
           <version>3.4.2</version>
+      </dependency>
+
+      <!--redis依赖-->
+      <dependency>
+          <groupId>redis.clients</groupId>
+          <artifactId>jedis</artifactId>
+          <version>2.9.0</version>
+      </dependency>
+      <dependency>
+          <groupId>org.apache.commons</groupId>
+          <artifactId>commons-pool2</artifactId>
+          <version>2.4.2</version>
       </dependency>
 
       <dependency>
