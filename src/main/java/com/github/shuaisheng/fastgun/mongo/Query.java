@@ -1,4 +1,4 @@
-package com.xuexibao.fastgun.mongo;
+package com.github.shuaisheng.fastgun.mongo;
 
 import java.util.Collection;
 import java.util.HashMap;

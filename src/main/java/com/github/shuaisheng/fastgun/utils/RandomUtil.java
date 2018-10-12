@@ -1,4 +1,4 @@
-package com.xuexibao.fastgun.utils;
+package com.github.shuaisheng.fastgun.utils;
 
 import java.util.Random;
 

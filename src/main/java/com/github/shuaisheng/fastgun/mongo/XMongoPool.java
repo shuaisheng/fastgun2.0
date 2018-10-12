@@ -1,4 +1,4 @@
-package com.xuexibao.fastgun.mongo;
+package com.github.shuaisheng.fastgun.mongo;
 
 import java.util.Collection;
 import java.util.HashMap;
@@ -7,7 +7,7 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 
-import com.xuexibao.fastgun.utils.BsonUtil;
+import com.github.shuaisheng.fastgun.utils.BsonUtil;
 import org.bson.Document;
 import org.bson.types.ObjectId;
 import org.javatuples.Pair;
@@ -24,7 +24,7 @@ import com.mongodb.client.result.DeleteResult;
 import com.mongodb.client.result.UpdateResult;
 
 
-import  com.xuexibao.fastgun.utils.ObjectUtil;
+import com.github.shuaisheng.fastgun.utils.ObjectUtil;
 
 
 public class XMongoPool {

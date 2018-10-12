@@ -1,4 +1,4 @@
-package com.xuexibao.fastgun.enums;
+package com.github.shuaisheng.fastgun.enums;
 
 /**
  * 状态码 枚举接口

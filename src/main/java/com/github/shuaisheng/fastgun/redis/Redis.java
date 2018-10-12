@@ -1,4 +1,4 @@
-package com.xuexibao.fastgun.redis;
+package com.github.shuaisheng.fastgun.redis;
 
 import redis.clients.jedis.*;
 import redis.clients.jedis.params.geo.GeoRadiusParam;

@@ -1,4 +1,4 @@
-package com.xuexibao.fastgun.redis;
+package com.github.shuaisheng.fastgun.redis;
 
 public class RedisConfig {
 

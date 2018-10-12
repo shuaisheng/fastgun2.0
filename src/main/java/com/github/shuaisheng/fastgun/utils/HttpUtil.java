@@ -1,4 +1,4 @@
-package com.xuexibao.fastgun.utils;
+package com.github.shuaisheng.fastgun.utils;
 
 import lombok.Builder;
 import lombok.ToString;
@@ -11,7 +11,7 @@ import java.util.Map;
 import java.util.concurrent.TimeUnit;
 import java.util.stream.Collectors;
 
-import static com.xuexibao.fastgun.utils.JsonUtil.object2Json;
+import static com.github.shuaisheng.fastgun.utils.JsonUtil.object2Json;
 
 
 public class HttpUtil {

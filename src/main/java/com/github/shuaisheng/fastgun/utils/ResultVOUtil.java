@@ -1,8 +1,7 @@
-package com.xuexibao.fastgun.utils;
+package com.github.shuaisheng.fastgun.utils;
 
-import com.xuexibao.fastgun.enums.IStatusEnums;
-import com.xuexibao.fastgun.enums.impl.ResultEnumImpl;
-import com.xuexibao.fastgun.viewobject.ResultVO;
+import com.github.shuaisheng.fastgun.enums.IStatusEnums;
+import com.github.shuaisheng.fastgun.viewobject.ResultVO;
 
 public class ResultVOUtil {
     public  static ResultVO success(Object object){

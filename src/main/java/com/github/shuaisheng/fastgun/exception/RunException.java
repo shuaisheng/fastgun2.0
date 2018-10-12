@@ -1,6 +1,6 @@
-package com.xuexibao.fastgun.exception;
+package com.github.shuaisheng.fastgun.exception;
 
-import com.xuexibao.fastgun.enums.IStatusEnums;
+import com.github.shuaisheng.fastgun.enums.IStatusEnums;
 
 public class RunException extends  RuntimeException{
 		

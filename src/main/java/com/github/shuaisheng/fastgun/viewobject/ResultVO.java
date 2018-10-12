@@ -1,4 +1,4 @@
-package com.xuexibao.fastgun.viewobject;
+package com.github.shuaisheng.fastgun.viewobject;
 
 
 import lombok.Data;

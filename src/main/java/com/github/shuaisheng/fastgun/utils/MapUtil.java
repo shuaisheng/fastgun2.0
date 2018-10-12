@@ -1,4 +1,4 @@
-package com.xuexibao.fastgun.utils;
+package com.github.shuaisheng.fastgun.utils;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;

@@ -1,4 +1,4 @@
-package com.xuexibao.fastgun.utils;
+package com.github.shuaisheng.fastgun.utils;
 
 
 import com.google.i18n.phonenumbers.PhoneNumberToCarrierMapper;

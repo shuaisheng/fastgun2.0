@@ -1,6 +1,6 @@
-package com.xuexibao.fastgun.enums.impl;
+package com.github.shuaisheng.fastgun.enums.impl;
 
-import com.xuexibao.fastgun.enums.IStatusEnums;
+import com.github.shuaisheng.fastgun.enums.IStatusEnums;
 
 public enum ResultEnumImpl implements IStatusEnums {
 
