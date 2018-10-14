@@ -6,12 +6,10 @@ import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
-
 import com.github.shuaisheng.fastgun.utils.BsonUtil;
 import org.bson.Document;
 import org.bson.types.ObjectId;
 import org.javatuples.Pair;
-
 import com.mongodb.BasicDBObject;
 import com.mongodb.DBCollection;
 import com.mongodb.MongoClient;
@@ -22,16 +20,14 @@ import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoCursor;
 import com.mongodb.client.result.DeleteResult;
 import com.mongodb.client.result.UpdateResult;
-
-
 import com.github.shuaisheng.fastgun.utils.ObjectUtil;
 
 
-public class XMongoPool {
+public class MongoPool {
     private MongoClient mongoClient;
     private String database;
 
-    public XMongoPool(String url, String user, String password, String database) {
+    public MongoPool(String url, String user, String password, String database) {
         MongoClientOptions.Builder builder = new MongoClientOptions.Builder();
         builder.connectionsPerHost(200);
         builder.maxWaitTime(3000);

@@ -7,18 +7,18 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-public class Redis {
+public class RedisPool {
     public JedisPool pool;
     private String password;
 
-    public Redis(RedisConfig redisConfig) {
+    public RedisPool(String host, Integer port, String password) {
         JedisPoolConfig config = new JedisPoolConfig();
-        config.setMaxIdle(redisConfig.maxIdle);
-        config.setTestOnBorrow(redisConfig.testOnBorrow);
-        config.setMaxTotal(redisConfig.maxTotal);
-        config.setMaxWaitMillis(redisConfig.maxWaitMillis);
-        this.pool = new JedisPool(config, redisConfig.host, redisConfig.port);
-        this.password = redisConfig.password;
+        config.setMaxIdle(10);
+        config.setTestOnBorrow(false);
+        config.setMaxTotal(200);
+        config.setMaxWaitMillis(100 * 1000L);
+        this.pool = new JedisPool(config, host, port);
+        this.password = password;
     }
 
     public Jedis getJedis() {

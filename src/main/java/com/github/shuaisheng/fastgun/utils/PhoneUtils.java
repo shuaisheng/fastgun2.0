@@ -122,17 +122,5 @@ public class PhoneUtils {
 
     }
 
-    public static void main(String[] args) {
-
-        //166 号段测试 16638390283
-        System.out.println(PhoneUtils.getCarrier("16638390283",86));
-        System.out.println(PhoneUtils.getCarrier("17631376808"));
-
-
-
-    }
-
-
-
 }
 
