@@ -128,21 +128,26 @@
           <version>1.94</version>
       </dependency>
 
-      <!--mongodb依赖-->
+      <dependency>
+          <groupId>org.javatuples</groupId>
+          <artifactId>javatuples</artifactId>
+          <version>1.2</version>
+      </dependency>
+
+      <!--mongodb 连接池依赖-->
       <dependency>
           <groupId>org.mongodb</groupId>
           <artifactId>bson</artifactId>
           <version>3.6.4</version>
           <scope>compile</scope>
       </dependency>
-
       <dependency>
           <groupId>org.mongodb</groupId>
           <artifactId>mongodb-driver</artifactId>
           <version>3.4.2</version>
       </dependency>
 
-      <!--redis依赖-->
+      <!--redis 连接池依赖-->
       <dependency>
           <groupId>redis.clients</groupId>
           <artifactId>jedis</artifactId>
@@ -154,11 +159,19 @@
           <version>2.4.2</version>
       </dependency>
 
+      <!-- mysql 连接池依赖（使用druid连接池）-->
       <dependency>
-          <groupId>org.javatuples</groupId>
-          <artifactId>javatuples</artifactId>
-          <version>1.2</version>
+          <groupId>com.alibaba</groupId>
+          <artifactId>druid</artifactId>
+          <version>1.1.12</version>
       </dependency>
+      <!--<dependency>
+          <groupId>mysql</groupId>
+          <artifactId>mysql-connector-java</artifactId>
+          <version>6.0.6</version>
+      </dependency>-->
+
+
 
   </dependencies>
 </project>

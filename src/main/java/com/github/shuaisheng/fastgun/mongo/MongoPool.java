@@ -27,6 +27,14 @@ public class MongoPool {
     private MongoClient mongoClient;
     private String database;
 
+    /**
+     * spring boot需要将自带的mongo驱动自动配置去掉
+     * exclude = {MongoAutoConfiguration.class, MongoDataAutoConfiguration.class}
+     * @param url
+     * @param user
+     * @param password
+     * @param database
+     */
     public MongoPool(String url, String user, String password, String database) {
         MongoClientOptions.Builder builder = new MongoClientOptions.Builder();
         builder.connectionsPerHost(200);

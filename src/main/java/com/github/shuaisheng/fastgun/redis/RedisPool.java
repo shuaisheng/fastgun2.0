@@ -8,7 +8,7 @@ import java.util.Map;
 import java.util.Set;
 
 public class RedisPool {
-    public JedisPool pool;
+    private JedisPool pool;
     private String password;
 
     public RedisPool(String host, Integer port, String password) {
